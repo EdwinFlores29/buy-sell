@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Listing} from "../types";
 import { fakeListings} from "../fake-data";
@@ -8,7 +8,7 @@ import { fakeListings} from "../fake-data";
   templateUrl: './listings-detail-page.component.html',
   styleUrls: ['./listings-detail-page.component.css']
 })
-export class ListingsDetailPageComponent {
+export class ListingsDetailPageComponent implements OnInit{
   listings: Listing[] = [];
 
   constructor(

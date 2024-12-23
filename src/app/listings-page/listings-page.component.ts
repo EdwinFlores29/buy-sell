@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Listing} from "../types";
 import { fakeListings} from "../fake-data";
 
@@ -7,7 +7,7 @@ import { fakeListings} from "../fake-data";
   templateUrl: './listings-page.component.html',
   styleUrls: ['./listings-page.component.css']
 })
-export class ListingsPageComponent {
+export class ListingsPageComponent implements OnInit{
   listings: Listing[] = [];
 
   constructor() { }
