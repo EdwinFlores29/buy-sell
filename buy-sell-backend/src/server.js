@@ -7,10 +7,12 @@ const start = async () => {
   });
 
   server.route({
-    method: 'GET',
+    method: 'POST',
     path: '/hello',
     handler: function (request, h) {
-      return 'Hello World!';
+      const payload = request.payload;
+      const name = payload.name;
+      return `Hello ${name}!`;
     }
   });
 
