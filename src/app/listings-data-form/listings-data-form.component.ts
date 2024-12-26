@@ -35,6 +35,7 @@ export class ListingsDataFormComponent implements OnInit {
        name: this.name,
        description: this.description,
        price: Number(this.price),
+       views: 0,
      });
   }
 }
