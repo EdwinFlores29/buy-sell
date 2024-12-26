@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { Listing} from "../types";
+import { Listing } from "../types";
 import { ListingsService} from "../listings.service";
 
 @Component({
