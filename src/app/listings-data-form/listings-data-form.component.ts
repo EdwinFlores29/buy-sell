@@ -11,11 +11,11 @@ export class ListingsDataFormComponent implements OnInit {
   @Input() buttonText: string = '';
   @Input() currentName: string = '';
   @Input() currentDescription: string = '';
-  @Input() currentPrice: number = 0;
+  @Input() currentPrice: string = '';
 
   name: string = '';
   description: string = '';
-  price: number = 0;
+   price: string = '';
 
   @Output() onSubmit = new EventEmitter<Listing>();
 

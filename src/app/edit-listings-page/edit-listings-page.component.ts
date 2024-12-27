@@ -25,4 +25,6 @@ export class EditListingsPageComponent implements OnInit{
     alert('Your listing has been updated!');
     this.router.navigateByUrl('/my-listings');
   }
+
+  protected readonly String = String;
 }

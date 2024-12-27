@@ -4,7 +4,7 @@
   <app-listings-data-form
     buttonText="Save Changes"
     [currentName]="listing.name"
-    [currentPrice]="listing.price"
+    [currentPrice]="String(listing.price)"
     [currentDescription]="listing.description"
     (onSubmit)="onSubmit()"></app-listings-data-form>
 </div>
